@@ -6,6 +6,9 @@
     <title>Zoom call</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -25,7 +28,7 @@
    <!-- /#site_header -->
 
    <main id="site_main">
-    <div class="container">
+    <div class="ccentral">
         <div class="row d-flex">
             <div class="col-7">
                 <div class="card">
@@ -305,13 +308,47 @@
 
    <!-- /#site_main -->
 
-   <footer id="site_footer">
+   <footer id="site_footer" class="d-flex">
     <div class="container d-flex">
-        <div class="communication">
-
+        <div class="communication d-flex">
+            <div class="mute">
+                <i class="fa-microphone fa-solid fa-xl"></i> <br>
+                Mute
+            </div>
+            <i class="fa-solid fa-angle-up fa-xs"></i>
+            <div class="video">
+                <i class=" fa-solid fa-video fa-xl"></i> <br>
+                Stop video
+            </div>
+            <i class="fa-solid fa-angle-up fa-xs"></i>
         </div>
         <div class="tools">
-            
+            <div class="row d-flex">
+                <div class="col">
+                    <i class="fa-solid fa-user-plus fa-xl"></i>
+                    <i class="fa-solid fa-user-group fa-xl"></i>
+                    <i class="fa-sharp fa-solid fa-chart-column fa-xl"></i>
+                    <i style="color:#4ec501" class="fa-sharp fa-solid fa-share-from-square fa-xl"></i>
+                    <i class="fa-solid fa-angle-up fa-xs"></i>
+                    <i class="fa-solid fa-comment fa-xl"></i>
+                    <i class="fa-solid fa-record-vinyl fa-xl"></i>
+                    <i class="fa-solid fa-table fa-xl"></i>
+                    <i class="fa-solid fa-ellipsis fa-xl"></i>
+                </div>
+                <div class="col">
+                    <div class="options">Invite</div>
+                    <div class="options">Manage Participants</div>
+                    <div class="options">Polling</div>
+                    <div class="options">Share Screen</div>
+                    <div class="options">Chat</div>
+                    <div class="options">Record</div>
+                    <div class="options">Breakout Rooms</div>
+                    <div class="options">More</div>
+                </div>
+            </div>
+        </div>
+        <div class="endcall">
+            End meeting
         </div>
     </div>
    </footer>
