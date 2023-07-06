@@ -40,7 +40,7 @@
 #site_header{
     background-color: var(--zoom-black);
     height: 70px;
-    position: sticky;
+    position: fixed;
 }
 
 .btn{
@@ -60,6 +60,36 @@ button{
 
 #site_main{
     background-color: var(--zoom-black);
+}
+
+#site_main .container{
+    overflow: auto;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.row{
+    margin: 0 100px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.col-7{
+    width: calc(100%/14*2);
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.card{
+    position: relative;
+}
+
+.user{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.178);
+    color: var(--zoom-white);
+    padding: 0.2rem;
+    bottom: 3%;
 }
 
 /*Footer*/
